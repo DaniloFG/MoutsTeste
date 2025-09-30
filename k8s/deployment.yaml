@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+name: senioreval-api-service
+spec:
+type: LoadBalancer
+selector:
+app: senioreval-api
+ports:
+
+protocol: TCP
+port: 80
+targetPort: 8080
